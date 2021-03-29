@@ -1,0 +1,67 @@
+ul {
+    overflow: hidden;
+    background-color: rgb(9, 32, 32);
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 1317px;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    color: dimgrey;
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    width: max-content;
+}
+
+li a:hover {
+    background-color: rgba(255, 255, 255, 0.6);
+    color: rgb(0, 7, 7);
+}
+
+li.b {
+    float: left;
+    font-size: 24pt;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    padding-left: 20px;
+}
+
+p#awal {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: justify;
+    text-indent: 60px;
+}
+
+p {
+    text-align: justify;
+    font-family: 'Courier New', Courier, monospace
+}
+
+.konten {
+    background-color: rgba(2, 45, 48, 0.4);
+    margin-top: 0px;
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: center;
+    padding: 10px;
+}
+
+.img {
+    float: left;
+    margin-right: 10px;
+    width: 200px;
+}
+
+.kotak {
+    /*tanpa margin*/
+    border: 1px solid rgb(58, 168, 113);
+    background-color: rgb(8, 76, 78);
+    text-align: left;
+}
