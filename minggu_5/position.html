@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Praktikum 6.1</title>
+    <style>
+        .static {
+            left: 100px;
+            position: static;
+            width: 300px;
+            height: 200px;
+            background: rgb(238, 145, 238);
+        }
+        
+        .relative {
+            left: 400px;
+            position: relative;
+            width: 300px;
+            height: 400px;
+            background: cyan;
+        }
+        
+        .absolute {
+            left: 50px;
+            top: 150px;
+            position: absolute;
+            width: 300px;
+            height: 400px;
+            background: darkcyan;
+        }
+        
+        .fixed {
+            right: 10%;
+            bottom: 10px;
+            position: fixed;
+            width: 300px;
+            height: 200px;
+            background: rgb(241, 241, 116);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="static">
+        Elemen static. Nilai left tidak berpengaruh
+    </div>
+
+    <div class="relative">
+        Elemen relative. Nilai left mengikuti alur
+    </div>
+
+    <div class="absolute">
+        Elemen absolute. Bisa diletakkan dimana saja
+    </div>
+    <div class="fixed">
+        Elemen fixed. Posisi tetap
+    </div>
+</body>
+
+</html>

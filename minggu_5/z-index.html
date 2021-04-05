@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Praktikum 6.2.Z-index</title>
+    <style>
+        #layera {
+            position: absolute;
+            margin: 20px 150px;
+            height: 200px;
+            width: 200px;
+            background: rgb(0, 255, 213);
+            z-index: 3;
+        }
+        
+        #layerb {
+            position: absolute;
+            margin: 100px 0;
+            height: 150px;
+            width: 300px;
+            background: rgb(230, 173, 221);
+            z-index: 2;
+        }
+        
+        #layerc {
+            position: absolute;
+            margin: 0 20px;
+            height: 200px;
+            width: 400px;
+            background: rgb(215, 241, 153);
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="layera">Layer A</div>
+    <div id="layerb">Layer B</div>
+    <div id="layerc">Layer C</div>
+</body>
+
+</html>
