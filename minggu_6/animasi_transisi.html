@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+        .box {
+            width: 40%;
+            height: 100px;
+            background: turquoise;
+            border: 5px double black;
+            border-radius: 5px;
+            -webkit-transition: ease-in-out 1s;
+            transition: ease-in-out 1s;
+            -o-transition: ease-in-out 1s;
+            -moz-transition: ease-in-out 1s;
+        }
+        
+        @media(orientation: landscape) {
+            .box {
+                width: 100%;
+                background: crimson;
+            }
+        }
+    </style>
+    <title>Animasi Transisi CSS 3</title>
+</head>
+
+<body>
+    <h3>Transisi CSS3</h3>
+    <div class="box"></div>
+    <p>Ketika ukuran diubah, ukuran box juga akan berubah</p>
+</body>
+
+</html>
