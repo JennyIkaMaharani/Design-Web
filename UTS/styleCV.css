@@ -1,0 +1,175 @@
+        #wrap {
+            width: 1000px;
+            height: 100%;
+            margin: 0 auto;
+            border-color: black;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        #kiri {
+            background-color: #1e6182;
+            width: 250px;
+            height: 100%;
+            margin-left: 20px;
+            float: left;
+            list-style: none;
+            color: white;
+            position: fixed;
+        }
+        
+        .subjudul1 {
+            background-color: #3de3c7;
+            color: white;
+            padding: 0;
+            width: 250px;
+            margin-left: 0;
+            font-size: 16pt;
+            text-align: center;
+            font: bold;
+        }
+        
+        ul {
+            text-align: left;
+        }
+        
+        #img {
+            width: 70%;
+            height: 70%;
+            border-top-left-radius: 50%;
+            border-bottom-left-radius: 50%;
+            border-bottom-right-radius: 50%;
+            border-top-right-radius: 50%;
+        }
+        
+        #main {
+            background-color: white;
+            width: 690px;
+            height: 100%;
+            padding: 20px 20px 20px 20px;
+            float: right;
+            border-color: black;
+            border-right: black;
+            margin-top: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        #info {
+            float: none;
+        }
+        
+        #menu {
+            border-color: black;
+            border-right: black;
+            margin-left: 270px;
+            margin-top: 0;
+        }
+        
+        #menu ul {
+            width: 690px;
+            height: fit-content;
+            float: right;
+            background: #3de3c7;
+            padding: 0 0px;
+            position: fixed;
+            list-style: none;
+            text-decoration: none;
+            margin-top: 0;
+        }
+        
+        #menu ul:after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+        
+        #menu ul li {
+            float: left;
+            width: max-content;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 20px;
+            padding-right: 50px;
+            height: auto;
+            text-decoration: none;
+            color: white;
+        }
+        
+        #menu ul li:hover {
+            background: rgb(211, 211, 211);
+        }
+        
+        #ul li a {
+            display: block;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none none none white;
+        }
+        
+        #menu ul li:hover a {
+            color: white;
+        }
+        
+        @media only screen and (max-width: 768px) {
+            #kiri {
+                background-color: #1e6182;
+                width: 100%;
+                height: fit-content;
+                margin-left: 0;
+                list-style: none;
+                color: white;
+                position: fixed;
+            }
+            .subjudul1 {
+                background-color: #3de3c7;
+                color: white;
+                padding: 0;
+                width: 250px;
+                margin-left: 0;
+                font-size: 16pt;
+                text-align: center;
+                font: bold;
+            }
+            ul {
+                text-align: left;
+                list-style: none;
+            }
+            #main {
+                background-color: #edf2f5;
+                width: 100%;
+                height: fit-content;
+                margin-top: 550px;
+                padding: 20px 20px 20px 20px;
+                border-color: black;
+                border-right: black;
+                position: relative;
+            }
+            #info {
+                float: right;
+                margin-right: 10%;
+            }
+            #img {
+                float: left;
+                height: 50%;
+                width: 50%;
+                margin-left: 5%;
+            }
+            #menu {
+                width: 100%;
+                position: fixed;
+                margin-top: 0px;
+                margin-left: 0;
+            }
+            #menu ul {
+                width: 100%;
+            }
+            #menu ul li {
+                float: left;
+                width: 18.05%;
+                padding-top: 0;
+                padding-bottom: 0;
+                text-align: center;
+            }
+            h2 {
+                margin-left: 20px;
+            }
+        }
