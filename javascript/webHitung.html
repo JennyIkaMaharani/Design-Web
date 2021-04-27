@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konversi</title>
+    <link rel="stylesheet" href="webHitung.css">
+
+</head>
+
+<body style="font-family: 'Courier New', Courier, monospace;">
+
+
+    <table id="table">
+        <tr>
+            <td>
+                <h2>webHitung.BMI</h2>
+            </td>
+        </tr>
+    </table>
+    </div>
+
+    <center>
+        <div id="kotak">
+            <div id="konten">
+                <h1>Cek Body Mass Index</h1>
+
+                <form action="POST" name="input">
+                    <label>Masukkan tinggi badan (m)</label>
+                    <input type="text" name="tb" id="tb" onfocus="f1()" onblur="d1()">
+                    <br>
+                    <label>Masukkan berat  badan (kg)</label>
+                    <input type="text" name="bb" id="bb" onfocus="f2()" onblur="d2()">
+                    <br>
+                    <input type="button" value="Hitung BMI" onclick="bmi()">
+                    <input type="reset" value="Ulangi">
+
+                </form>
+
+                <br>
+                <script src="webHitung.js">
+                </script>
+            </div>
+        </div>
+    </center>
+
+
+
+</body>
+
+</html>
