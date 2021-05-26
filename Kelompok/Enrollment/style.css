@@ -1,0 +1,134 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(img/bg.png);
+}
+
+nav {
+    background-color: #161616;
+    min-height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: rgba(12.5%, 69.8%, 66.7%);
+}
+
+button {
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: rgba(12.5%, 69.8%, 66.7%);
+    border: none;
+    border-radius: 50px;
+    padding: 5px 30px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}
+
+button:hover {
+    background: linear-gradient(90deg, deeppink, blueviolet);
+}
+
+.kuliah-container {
+    float: left;
+    padding: 24px;
+}
+
+.box-container {
+    width: 18rem;
+    height: 18rem;
+    background: whitesmoke;
+    border-radius: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+#batik1 {
+    background-image: url(img/batik1.jpg);
+}
+
+#batik2 {
+    background-image: url(img/batik2.jpg);
+}
+
+#batik3 {
+    background-image: url(img/batik3.jpg);
+}
+
+#batik4 {
+    background-image: url(img/batik4.jpg);
+}
+
+.upper-bg {
+    position: relative;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    left: 0;
+    top: 0;
+    height: 35%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.box-container a {
+    color: lightseagreen;
+    z-index: 1;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.box-container a:hover {
+    color: blueviolet;
+}
+
+.pic {
+    width: 5rem;
+    height: 5rem;
+    background-color: black;
+    z-index: 2;
+    border-radius: 50%;
+    position: relative;
+    top: -15%;
+    left: 36%;
+}

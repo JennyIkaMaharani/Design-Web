@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum Diskusi</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class="judul">
+        <h3>Forum Diskusi</h3>
+        <div class="online">
+            <h5><span id="totalUserOnline"></span> online</h5>
+        </div>
+        <a href="../forum.html">Home</a>
+    </div>
+    <div class="container">
+        <div class="chat" id="message-list"></div>
+        <div class="row">
+            <div class="type">
+                <input type="text" class="type-in" placeholder="Masukkan Pesan" id="message">
+            </div>
+            <div class="send">
+                <button class="button-in" id="sendMessage">Kirim</button>
+            </div>
+        </div>
+
+    </div>
+
+    <style type="text/css">
+        body {
+            background-image: url(bg.png);
+            background-color: #505050;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        
+        .judul {
+            text-align: center;
+        }
+        
+        .judul a {
+            text-decoration: none;
+            font-size: 25px;
+            color: black;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        .judul a:hover {
+            color: lightseagreen;
+        }
+        
+        .judul h3 {
+            font-size: 45px;
+        }
+        
+        .judul h5 {
+            font-size: 50px;
+        }
+        
+        .container {
+            width: 500px;
+            height: 550px;
+            border-radius: 20px;
+            border: 5px solid black;
+            padding: 10px;
+        }
+        
+        .chat {
+            width: 495px;
+            height: 475px;
+            border-radius: 20px;
+            border: none;
+            overflow-y: scroll;
+            overflow-x: hidden;
+        }
+        
+        .card-container {
+            padding: 2px 0;
+        }
+        
+        .card {
+            width: 455px;
+            height: 70px;
+            background-color: lightseagreen;
+            border: 1px solid black;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: left;
+            font-size: 30px;
+            padding-left: 15px;
+        }
+        
+        .row {
+            border: none;
+            width: 495px;
+            height: 70px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-top: 5px;
+        }
+        
+        .type input {
+            border-radius: 20px;
+            outline: none;
+            border: none;
+            background: rgba(0, 0, 0, .1);
+            color: rgba(63, 63, 63, 0.7);
+            box-shadow: 0 0 5px rgba(0, 0, 0, .5) inset;
+            font-size: 15px;
+            width: 355px;
+            height: 70px;
+            font-size: 20px;
+            color: white;
+        }
+        
+        .send button {
+            color: white;
+            font-size: 25px;
+            width: 135.5px;
+            height: 70px;
+            cursor: pointer;
+            background: linear-gradient(90deg, deeppink, blueviolet);
+            border: none;
+            border-radius: 20px;
+        }
+        
+        .online h5 {
+            color: white;
+            font-size: 20px;
+        }
+    </style>
+</body>
+<script src="/socket.io/socket.io.js"></script>
+<script>
+    var socket = io()
+
+    socket.emit('join')
+    socket.on('message', (param) => {
+        alert('new message')
+        $("#message-list").append(`
+        <div class="card-container">
+            <div class="card">
+                ${param.text}
+            </div>
+        </div>
+        `)
+    })
+    socket.on('countUserOnline', (countUserOnline) => {
+        $("#totalUserOnline").text(countUserOnline)
+    })
+    $("#sendMessage").click(() => {
+        socket.emit('message', {
+            text: $("#message").val()
+        })
+    })
+</script>
+
+</html>

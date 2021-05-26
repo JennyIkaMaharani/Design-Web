@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="asset/font/fontawesome/css/all.css">
+    <title>Sahabat Mahasiswa - Home</title>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">Sahabat Mahasiswa</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Enrollment/enrollment.html">Enrollment</a></li>
+            <li><a href="about/about.html">About Us</a></li>
+        </ul>
+        <button class="btn"><a href="log in/signUp.html">Log in</a></button>
+    </nav>
+
+    <section>
+        <img src="asset/img/logo.png" id="logo">
+        <img src="asset/img/gedung.png" id="gedung">
+        <h2 id="text">Sahabat Mahasiswa</h2>
+    </section>
+
+    <div class="intro">
+        <h2>Selamat Datang</h2>
+        <p> Selamat datang di website Sahabat Mahasiswa. Website ini bertujuan untuk membantu mahasiswa dalam pengumpulan tugas. Selain menjadi tempat pengumpulan tugas, terdapat forum diskusi sebagai tempat untuk membantu sama lain. Tidak hanya berdiskusi
+            dengan mahasiswa saja, kamu juga bisa berdiskusi dengan dosen secara private loh! Walaupun belum banyak fitur yang kami sediakan, diharapkan kedepannya kami akan memberikan fitur-fitur yang lain. Sebagai sahabat mahasiswa, kami sangat senang
+            bila website ini membantu mahasiswa dalam pengumpulan tugas dan diskusi. Nantikan fitur-fitur kami yang lain yaaa :D</p>
+    </div>
+
+    <script>
+        let logo = document.getElementById('logo');
+        let gedung = document.getElementById('gedung');
+        let text = document.getElementById('text');
+
+        window.addEventListener('scroll', function() {
+            let value = window.scrollY;
+            logo.style.marginLeft = value * 1.5 + 'px';
+            text.style.marginRight = value * 1.5 + 'px';
+        });
+    </script>
+</body>
+
+</html>

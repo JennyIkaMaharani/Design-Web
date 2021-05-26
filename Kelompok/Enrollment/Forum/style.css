@@ -1,0 +1,101 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url(../img/bg.png);
+}
+
+header {
+    min-height: 10vh;
+    width: 100%;
+    background-color: #161616;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.home {
+    color: white;
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 25%;
+}
+
+header li {
+    list-style: none;
+    font-size: 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+header a:hover {
+    color: lightseagreen;
+}
+
+.jC {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bjC {
+    width: 76%;
+    height: 300px;
+    background-image: url(img/batik1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+}
+
+.bjC h2 {
+    font-size: 60px;
+    color: whitesmoke;
+    padding-top: 80px;
+    letter-spacing: 2px;
+}
+
+.bjC h3 {
+    font-size: 45px;
+    color: whitesmoke;
+    letter-spacing: 2px;
+}
+
+.DC {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.Diskusigan {
+    width: 60%;
+    height: auto;
+    background-color: white;
+    border: 3px solid #161616;
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+.Diskusigan a {
+    text-decoration: none;
+    color: black;
+}
+
+.Diskusigan a:hover {
+    color: lightseagreen;
+}

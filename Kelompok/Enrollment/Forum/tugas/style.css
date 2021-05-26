@@ -1,0 +1,147 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url(../../img/bg.png);
+}
+
+header {
+    min-height: 10vh;
+    width: 100%;
+    background-color: #161616;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.home {
+    color: white;
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 25%;
+}
+
+header li {
+    list-style: none;
+    font-size: 20px;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+}
+
+header a:hover {
+    color: lightseagreen;
+}
+
+.jC {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bjC {
+    width: 76%;
+    height: 300px;
+    background-image: url(../img/batik1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    text-align: center;
+}
+
+.bjC h2 {
+    font-size: 60px;
+    color: whitesmoke;
+    padding-top: 80px;
+    letter-spacing: 2px;
+}
+
+.bjC h3 {
+    font-size: 45px;
+    color: whitesmoke;
+    letter-spacing: 2px;
+}
+
+.submission {
+    background: white;
+    width: fit-content;
+    min-height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.submission form fieldset {
+    padding: 10px;
+    border-radius: 20px;
+    border-color: whitesmoke;
+}
+
+form {
+    background-color: #161616;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+table {
+    width: 100%;
+    background-color: #161616;
+}
+
+table td {
+    width: 100%;
+}
+
+.cel input,
+.cel select,
+.cel select option,
+.cel textarea {
+    width: 100%;
+    position: relative;
+    resize: none;
+    padding: 10px 0;
+    background: whitesmoke;
+    color: blueviolet;
+}
+
+.cel textarea {
+    width: 100%;
+}
+
+label {
+    color: white;
+}
+
+::placeholder {
+    color: blueviolet;
+}
+
+.btn,
+.submission form fieldset input[type="file"] {
+    width: 90%;
+    cursor: pointer;
+    background: linear-gradient(90deg, deeppink, blueviolet);
+    margin-top: 20px;
+    border-radius: 50px;
+    box-align: center;
+    color: whitesmoke;
+    border: none;
+    text-align: center;
+}

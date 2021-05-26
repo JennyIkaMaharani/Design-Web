@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Sahabat Mahasiswa - Algoritma</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <a href="../../enrollment.html" class="home">Home</a>
+        <ul class="nav-links">
+            <li><a href="../forum.html">Diskusi</a></li>
+            <li><a href="pengumpulan tugas.html">Tugas</a></li>
+        </ul>
+    </header>
+
+    <section>
+        <div class="jC">
+            <div class="bjC">
+                <h2>Pengumpulan Tugas</h2>
+                <h3>Algoritma</h3>
+            </div>
+        </div>
+
+        <script>
+            alert("Salam mahasiswa, Pastikan tugas dikumpulkan sebelum batas waktu dan sesuai dengan ketentuan dari dosen, ya! Tetap Semangat")
+        </script>
+
+        <div class="submission">
+            <form action="" name="form">
+                <fieldset>
+
+                    <div class="cel">
+                        <table>
+                            <tr>
+                                <td><label for="materi"> Materi</label></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <select name="materi" id="topik" required="required">
+                                        <option value="1">Jenis Algoritma</option>
+                                        <option value="2">Pseudocode</option>
+                                        <option value="3">Flowchart</option>
+                                        <option value="4">Efisiensi Algoritma</option>
+                                        <option value="5">Array</option>
+                                        <option value="6">Rekursif</option>
+                                    </select>
+                                </td>
+                            </tr>
+
+
+                        </table>
+
+
+
+                    </div>
+                    <center>
+                        <div class="cel">
+                            <label for="desc">Deskripsi</label>
+
+                            <br><textarea name="desc" id="desc" placeholder="Berikan deskripsi singkat"></textarea>
+                        </div>
+
+                        <div class="cel">
+                            <br><input type="file" name="assignment" id="assignment">
+                        </div>
+
+                        <input class="btn" type="submit" value="Submit">
+
+
+                        <input class="btn" type="reset" value="Reset">
+                    </center>
+
+                </fieldset>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,148 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: #161616;
+    min-height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: rgba(12.5%, 69.8%, 66.7%);
+}
+
+button {
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: rgba(12.5%, 69.8%, 66.7%);
+    border: none;
+    border-radius: 50px;
+    padding: 5px 30px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button a {
+    text-decoration: none;
+    color: white;
+}
+
+button:hover {
+    background: linear-gradient(90deg, deeppink, blueviolet);
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(#03a1fc, #8ad4ff);
+    background-size: cover;
+    overflow-x: hidden;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+section img#logo {
+    width: 256px;
+    height: 256px;
+    top: 20%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+}
+
+section img#gedung {
+    height: 855px;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#text {
+    position: absolute;
+    color: white;
+    font-size: 5vw;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.intro {
+    position: relative;
+    padding: 50px;
+    background: #567607;
+}
+
+.intro h2 {
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.intro p {
+    font-size: 1.2em;
+    color: white;
+}
+
+section::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to top, #567607, transparent);
+    z-index: 1000;
+}
+
+@media screen and (max-width: 1024px) {
+    .nav-links {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 768px) {}
